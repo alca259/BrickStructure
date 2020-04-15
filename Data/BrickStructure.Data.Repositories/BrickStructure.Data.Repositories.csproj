@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrickStructure.Data.Contracts\BrickStructure.Data.Contracts.csproj" />
+    <ProjectReference Include="..\BrickStructure.Data.Entities\BrickStructure.Data.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrickStructure.Business.Contracts\BrickStructure.Business.Contracts.csproj" />
+    <ProjectReference Include="..\BrickStructure.Business.Managers\BrickStructure.Business.Managers.csproj" />
+    <ProjectReference Include="..\BrickStructure.Business.Models\BrickStructure.Business.Models.csproj" />
+  </ItemGroup>
+
+</Project>

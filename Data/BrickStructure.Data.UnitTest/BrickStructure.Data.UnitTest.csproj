@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrickStructure.Data.Agents\BrickStructure.Data.Agents.csproj" />
+    <ProjectReference Include="..\BrickStructure.Data.Contracts\BrickStructure.Data.Contracts.csproj" />
+    <ProjectReference Include="..\BrickStructure.Data.Entities\BrickStructure.Data.Entities.csproj" />
+    <ProjectReference Include="..\BrickStructure.Data.Extensions\BrickStructure.Data.Extensions.csproj" />
+    <ProjectReference Include="..\BrickStructure.Data.Repositories\BrickStructure.Data.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
