@@ -1,15 +1,11 @@
 ﻿using BrickStructure.Data.Contracts;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BrickStructure.Data.Repositories
 {
-    public class WeatherContext : DbContext, IRepositoryContext
+    public class AppContext : DbContext, IRepositoryContext
     {
-        public WeatherContext(DbContextOptions<WeatherContext> options) : base(options)
+        public AppContext(DbContextOptions<AppContext> options) : base(options)
         {
         }
 
@@ -23,7 +19,8 @@ namespace BrickStructure.Data.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            var assembly = GetType().Assembly;
+            modelBuilder.ApplyConfigurationsFromAssembly(assembly);
         }
     }
 }

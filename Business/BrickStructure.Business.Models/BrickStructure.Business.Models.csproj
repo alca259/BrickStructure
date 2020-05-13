@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\BrickStructure.Data.Entities\BrickStructure.Data.Entities.csproj" />
     <ProjectReference Include="..\BrickStructure.Business.Contracts\BrickStructure.Business.Contracts.csproj" />
   </ItemGroup>
 
