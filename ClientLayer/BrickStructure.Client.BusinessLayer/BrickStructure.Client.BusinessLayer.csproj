@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Business\BrickStructure.Business.Contracts\BrickStructure.Business.Contracts.csproj" />
+    <ProjectReference Include="..\..\Business\BrickStructure.Business.Extensions\BrickStructure.Business.Extensions.csproj" />
+    <ProjectReference Include="..\..\Business\BrickStructure.Business.Managers\BrickStructure.Business.Managers.csproj" />
+    <ProjectReference Include="..\BrickStructure.Client.DataLayer\BrickStructure.Client.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>

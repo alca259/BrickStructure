@@ -1,8 +1,8 @@
-﻿using BrickStructure.Data.Contracts;
+﻿using AutoMapper;
+using BrickStructure.Data.Contracts;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -16,11 +16,12 @@ namespace BrickStructure.Business.Contracts
         #region Properties
         TDataSource Agent { get; }
         ILogger Log { get; }
-        ClaimsPrincipal User { get; }
+        IMapper Map { get; }
+        //ClaimsPrincipal User { get; }
         #endregion
 
         #region Methods
-        IQueryable<TModel> GetAll();
+        IQueryable<TModel> GetAll(bool track = true);
         Task InsertAsync(TModel item, CancellationToken cancellationToken = default);
         Task InsertRangeAsync(IEnumerable<TModel> items, CancellationToken cancellationToken = default);
         void Update(TModel item);

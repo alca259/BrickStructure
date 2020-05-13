@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickStructure.Data.Entities", "Data\BrickStructure.Data.Entities\BrickStructure.Data.Entities.csproj", "{46AB0CAD-585C-4C70-969A-C45BBE6CAB2B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{54138186-3DC6-44AF-8E85-4952D1FDCBE8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Data", "1_Data", "{54138186-3DC6-44AF-8E85-4952D1FDCBE8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{C87A8CD6-D294-4041-AA82-75D825D95000}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Business", "2_Business", "{C87A8CD6-D294-4041-AA82-75D825D95000}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoints", "Endpoints", "{1D01D381-5096-4B86-9270-D73355CEC866}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Endpoints", "4_Endpoints", "{1D01D381-5096-4B86-9270-D73355CEC866}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickStructure.Data.Repositories", "Data\BrickStructure.Data.Repositories\BrickStructure.Data.Repositories.csproj", "{6A02FAE9-DCA4-4326-821D-2DC593B668DC}"
 EndProject
@@ -32,6 +32,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickStructure.Data.Extensions", "Data\BrickStructure.Data.Extensions\BrickStructure.Data.Extensions.csproj", "{83688670-B638-4354-9F3A-08278FF074AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickStructure.Business.Extensions", "Business\BrickStructure.Business.Extensions\BrickStructure.Business.Extensions.csproj", "{532461C5-4642-4189-930E-F9EBD3175B43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_ClientLayer", "3_ClientLayer", "{1A3163E6-A092-46EF-A833-B6C0DC571503}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrickStructure.Client.DataLayer", "ClientLayer\BrickStructure.Client.DataLayer\BrickStructure.Client.DataLayer.csproj", "{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickStructure.Client.BusinessLayer", "ClientLayer\BrickStructure.Client.BusinessLayer\BrickStructure.Client.BusinessLayer.csproj", "{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,14 @@ Global
 		{532461C5-4642-4189-930E-F9EBD3175B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{532461C5-4642-4189-930E-F9EBD3175B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{532461C5-4642-4189-930E-F9EBD3175B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +118,8 @@ Global
 		{E1529F71-9369-4840-92A6-047F7C887B5E} = {54138186-3DC6-44AF-8E85-4952D1FDCBE8}
 		{83688670-B638-4354-9F3A-08278FF074AD} = {54138186-3DC6-44AF-8E85-4952D1FDCBE8}
 		{532461C5-4642-4189-930E-F9EBD3175B43} = {C87A8CD6-D294-4041-AA82-75D825D95000}
+		{9C0E2546-7CFF-4BE2-9BCF-070F6D684C15} = {1A3163E6-A092-46EF-A833-B6C0DC571503}
+		{6BE0B78D-5F18-4A7B-8886-5C1AFF47D6E4} = {1A3163E6-A092-46EF-A833-B6C0DC571503}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0434272-C5AB-4956-85A7-CDEB70D7D0BF}

@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Weather";
+    var controllerName = "Weather";
+    var actionCore = "GetAllCore";
+    var actionExt = "GetAllExtended";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Weather Core</h1>
+    <button id="callCore">Call core action</button>
+
+    <h1 class="display-4">Weather Extended</h1>
+    <button id="callExtended">Call core action</button>
+</div>
+
+@section Scripts {
+<script type="text/javascript">
+    $(document).ready(function () {
+        let callCore = function () {
+            $.ajax({
+                method: "POST",
+                url: "@Url.Action(actionCore, controllerName)",
+                success: function (result) {
+                    console.log(result);
+                },
+                error: function (...result) {
+                    console.log(result);
+                }
+            })
+        };
+
+        let callExt = function () {
+            $.ajax({
+                method: "POST",
+                url: "@Url.Action(actionExt, controllerName)",
+                success: function (result) {
+                    console.log(result);
+                },
+                error: function (...result) {
+                    console.log(result);
+                }
+            })
+        };
+
+        $("#callCore").on("click", callCore);
+        $("#callExtended").on("click", callExt);
+    });
+</script>
+}

@@ -33,7 +33,5 @@ namespace BrickStructure.Data.Entities
         public float TemperatureFloor { get; set; }
         public float TemperatureAir { get; set; }
         public EnumWeatherSkyStatus SkyStatus { get; set; }
-        public string SkyDescription { get; set; }
-        public bool IsReal { get; set; }
     }
 }
